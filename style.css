@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.ParallaxVideo{ 
+    height: 1000px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+    position: relative;
+   
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+.ParallaxVideo .punch-line-1{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.ParallaxVideo span {
+  color: #fff;
+  font-size: 106px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: normal;
+  
+}
+
+.ParallaxVideo .author {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+  }
+
+.quote-1{
+    width:100%; 
+    height: 200px;
+    background-color: #eb3643;
+    position: relative;
+}
+
+.quote-1 p {
+    color: white;
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    /* padding: 10px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.img-deco-1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.a-propos{
+    background-color: #222222;
+    color: white;
+    position: relative;
+}
+
+.conteneur-text-a-propos{
+    width: 70%;
+    position: absolute;
+    /* padding: 10px; */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.propos-title{
+    text-transform: uppercase;
+    font-family: 'Anton';
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #464545;
+    margin-bottom: 5px;
+
+}
+
+.propos-name{
+    text-transform: uppercase;
+    font-family: 'Anton';
+    letter-spacing: 6px;
+    font-size: 40px;
+
+
+}
+
+.training{
+    position: relative;
+    height: auto;
+}
+
+.training img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* object-fit: cover; */
+    height: 860px;
+    width: 100%;
+    z-index: -999;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 860px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -998;
+  
+  }
+
+.training-container{
+    width: 60%;
+    margin: 0 auto;
+}  
+.training-title{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 85px;
+
+}
+
+.training-step{
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.numero-training span{
+    font-family: 'Anton', sans-serif;
+    font-size: 110px;
+    color: #eb3643 ;
+}
+
+.training-step p{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    top: 40%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 775px){
+
+}
