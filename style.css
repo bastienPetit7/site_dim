@@ -6,36 +6,58 @@
     padding: 0;
 }
   
+html {
+    scroll-behavior: smooth;
+    
+}
+
+/* ------------------- Section Nav-Bar------------------ */
+
+.bg-dark{
+    background-color: #000000 !important;
+}
+
+.logo-nav{
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/* ------------------- Section Parallax Video ------------------ */
+
+
 .ParallaxVideo{ 
-    height: 1000px;
+    height: auto;
     padding-bottom: 50px;
     padding-top: 50px; 
     position: relative;
+    
    
 }
 .ParallaxVideo video{ 
     min-width: 100%;
     position: fixed;
+    /* position: static; */
     top:0;
+    right: 0;
+    bottom: 0;
     z-index: -999;
-    min-height: 100vh;
+    min-height: 100%;
     /* overflow: hidden; */
 }
 
 .ParallaxVideo .punch-line-1{
-    width: 50%;
+    width: 100%;
     height: auto;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    padding: 190px 0;
+   
 }
 
 .ParallaxVideo span {
   color: #fff;
   font-size: 106px;
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   line-height: normal;
   
@@ -45,11 +67,51 @@
     color: #fff;
     font-size: 26px;
     font-weight: 200;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     letter-spacing: 3px;
     
-  }
+}
+
+
+@media screen and (max-width: 775px) {
+    .ParallaxVideo .punch-line-1{
+        width: 100%;
+
+    }
+    
+    .ParallaxVideo span {
+      font-size: 80px;
+
+      
+    }
+    
+    .ParallaxVideo .author {
+        font-size: 18px;
+      
+        
+    }
+}
+@media screen and (max-width: 576px) {
+ 
+    
+    .ParallaxVideo span {
+      font-size: 50px;
+     
+      
+    }
+    
+    .ParallaxVideo .author {
+        font-size: 12px;
+
+        
+    }
+}
+
+
+
+
+/* ------------------- Setion Quote ------------------ */
 
 .quote-1{
     width:100%; 
@@ -72,6 +134,8 @@
     
 }
 
+/* ------------------- Setion A Propos ------------------ */
+
 .img-deco-1 img{
     object-fit: cover;
     width: 100%;
@@ -81,16 +145,12 @@
 .a-propos{
     background-color: #222222;
     color: white;
-    position: relative;
+    
 }
 
 .conteneur-text-a-propos{
     width: 70%;
-    position: absolute;
-    /* padding: 10px; */
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -60px;
 
 }
 
@@ -110,25 +170,39 @@
     letter-spacing: 6px;
     font-size: 40px;
 
-
 }
+
+@media screen and (max-width: 775px){
+
+    .img-deco-1 img{
+        
+        object-fit: cover;
+        width: 100%;
+        height: 40vh;
+        display: block;
+        margin: 10px auto;
+    }
+    .conteneur-text-a-propos{
+        width: 70%;
+        margin-top: 0px;
+        padding: 35px 0;
+    
+    }
+}
+
+/* ------------------- Section Training ------------------ */
+
 
 .training{
     position: relative;
     height: auto;
+    background: url(assets/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100% !important;
+    z-index: -99;
 }
 
-.training img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* object-fit: cover; */
-    height: 860px;
-    width: 100%;
-    z-index: -999;
-}
 
 .img-overlay {
     position: absolute;
@@ -136,35 +210,36 @@
     top: 0;
     right: 0;
     bottom: 0;
-    height: 860px;
+    
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
-    z-index: -998;
+    z-index: -98;
   
-  }
+}
 
 .training-container{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
+    padding-top: 40px;
 }  
 .training-title{
     font-family: 'Anton', sans-serif;
     letter-spacing: 10px;
-    font-size: 50px;
+    font-size: 4rem;
     text-transform: uppercase;
-    margin-top: 85px;
+    /* margin-top: 85px; */
 
 }
 
 .training-step{
-    width: 300px;
+    /* width: 300px; */
     height: auto;
     position: relative;
 }
 
 .numero-training span{
     font-family: 'Anton', sans-serif;
-    font-size: 110px;
+    font-size: 4rem;
     color: #eb3643 ;
 }
 
@@ -175,8 +250,242 @@
     top: 40%;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 1rem;
 
+}
+
+@media screen and (max-width: 775px ){
+
+    .training-title{
+       
+        letter-spacing: 8px;
+        font-size: 3rem;
+
+    
+    }
+}
+
+@media screen and (max-width: 576px ){
+
+    .training-title{
+       
+        letter-spacing: 6px;
+        font-size: 2rem;
+
+    
+    }
+}
+
+
+/* ------------------- Section Parallax ------------------ */
+
+.parallax {
+    min-width: 100% !important;
+    height: auto;
+    background: url(assets/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -998;
+    
+}
+
+/* ------------------- Section Temoignage ------------------ */
+
+
+.temoin-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(221, 47, 56, 0.7) ;
+    z-index: -997;
+}
+.parallax h3 {
+    font-size: 45px;
+    color: #f1f1f1;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    letter-spacing: 6px;
+}
+
+.temoignage-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.temoignage-cont div:nth-child(1){
+    border-top: none;
+}
+
+.temoignages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    width: 70%;
+    border-top: 0.4px solid #fff;
+
+}
+
+.temoignage{
+    font-size: 25px;
+    display: block;
+    padding: 15px 0;
+    margin-top: 30px;
+    letter-spacing: Opx;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+
+
+}
+
+.temoin-name{
+    display: block;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 2px;
+
+}
+
+.temoin-date{
+    display: block;
+    color: #fff;
+    margin-bottom: 40px;
+
+}
+
+@media screen and (max-width: 775px){
+    .parallax h3 {
+        font-size: 3rem;
+        color: #f1f1f1;
+        margin-top: 80px;
+        margin-bottom: 60px;
+      
+        letter-spacing: 6px;
+    }
+}
+@media screen and (max-width: 576px){
+    .parallax h3 {
+        font-size: 2rem;
+        color: #f1f1f1;
+        margin-top: 80px;
+        margin-bottom: 60px;
+      
+        letter-spacing: 6px;
+    }
+}
+
+/* ------------------- Section Contact ------------------ */
+
+
+.contact{
+    background-color: #222222;
+    height: auto;
+    padding: 65px 35px;
+
+}
+.contact-content h3{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.contact-content p{
+    font-size: 14px;
+}
+
+.rs-list{
+    margin-top: 28px;
+}
+.rs-list li{
+    list-style: none;
+    margin-right: 22px;
+}
+
+.fab{
+    font-size: 28px;
+}
+
+.contact-form{
+    width: 60%;
+}
+.contact-form h3{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form-group input{
+    background-color: transparent;
+    border: 3px solid #fff;
+    margin-bottom: 8px;
+    border-radius: 0px;
+    color: white;
+}
+.form-group textarea{
+    background-color: transparent;
+    border: 3px solid #fff;
+    height: 130px;
+    border-radius: 0px;
+
+}
+
+.form-control:hover{
+    background-color: #464545;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    color: white;
+    border-color: #eb3643;
+    box-shadow: none;
+}
+.form-group textarea:focus{
+    background-color: transparent;
+
+}
+.form-group input:focus{
+    background-color: transparent;
+
+}
+
+.button-sub-contact-form{
+    border-radius: 0px;
+}
+
+
+/* ------------------- Section Footer ------------------ */
+
+
+.footer-content{
+    height: 300px;
+    background-color: #eb3643 ;
+}
+
+.link-bottom-footer li{
+    list-style-type: none;
+    mar
 }
 
 
