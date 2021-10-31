@@ -8,6 +8,9 @@
   
 html {
     scroll-behavior: smooth;
+    font-family: sans-serif;
+    font-size: 15px;
+
     
 }
 
@@ -32,7 +35,6 @@ html {
     padding-top: 50px; 
     position: relative;
     
-   
 }
 .ParallaxVideo video{ 
     min-width: 100%;
@@ -40,20 +42,32 @@ html {
     /* position: static; */
     top:0;
     right: 0;
+    left: 0;
     bottom: 0;
     z-index: -999;
     min-height: 100%;
     /* overflow: hidden; */
 }
 
+.img-background{
+    min-width: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+    min-height: 100%;
+}
+
 .ParallaxVideo .punch-line-1{
     width: 100%;
     height: auto;
     padding: 190px 0;
+    margin-left: 100px;
    
 }
 
-.ParallaxVideo span {
+.ParallaxVideo .main-punch-line {
   color: #fff;
   font-size: 106px;
   font-weight: 700;
@@ -66,7 +80,7 @@ html {
 .ParallaxVideo .author {
     color: #fff;
     font-size: 26px;
-    font-weight: 200;
+    font-weight: 400;
     /* text-align: center; */
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -79,14 +93,13 @@ html {
         width: 100%;
 
     }
-    
-    .ParallaxVideo span {
-      font-size: 80px;
 
-      
+    .ParallaxVideo .main-punch-line{
+        font-size: 80px;
     }
     
-    .ParallaxVideo .author {
+    
+    .ParallaxVideo .author, .span-MY, .span-TRAINER {
         font-size: 18px;
       
         
@@ -94,19 +107,28 @@ html {
 }
 @media screen and (max-width: 576px) {
  
+    .ParallaxVideo .punch-line-1{
+        margin-left: 0;
+    }
     
-    .ParallaxVideo span {
+    .ParallaxVideo .main-punch-line {
       font-size: 50px;
      
       
     }
     
-    .ParallaxVideo .author {
+    .ParallaxVideo .author, .span-MY, .span-TRAINER {
         font-size: 12px;
 
         
     }
+
+    .txt-top-container{
+        width: 70%;
+    }
 }
+
+
 
 
 
@@ -134,6 +156,13 @@ html {
     
 }
 
+@media screen and (max-width: 775px){
+
+    .quote-1 p {
+        font-size: 20px;
+    }
+}
+
 /* ------------------- Setion A Propos ------------------ */
 
 .img-deco-1 img{
@@ -149,8 +178,8 @@ html {
 }
 
 .conteneur-text-a-propos{
-    width: 70%;
-    margin-top: -60px;
+    width: 80%;
+    /* margin-top: -60px; */
 
 }
 
@@ -158,10 +187,15 @@ html {
     text-transform: uppercase;
     font-family: 'Anton';
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 40px;
     color: #464545;
-    margin-bottom: 5px;
+    /* margin-bottom: 25px; */
+    display: block;
 
+}
+
+.punch-line-vision{
+    font-style: italic;
 }
 
 .propos-name{
@@ -183,8 +217,8 @@ html {
         margin: 10px auto;
     }
     .conteneur-text-a-propos{
-        width: 70%;
-        margin-top: 0px;
+        width: 90%;
+        margin-top: 20px;
         padding: 35px 0;
     
     }
@@ -231,15 +265,21 @@ html {
 
 }
 
-.training-step{
+.span-MY, .span-TRAINER{
+    color: #eb3643;
+}
+
+.training-steps{
     /* width: 300px; */
+    width: 70%;
     height: auto;
     position: relative;
+    margin: 70px auto;
 }
 
 .numero-training span{
     font-family: 'Anton', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #eb3643 ;
 }
 
@@ -250,7 +290,25 @@ html {
     top: 40%;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+
+}
+
+.services-content{
+    padding: 45px;
+}
+
+.div-entrainement{
+    border-right: 1px solid #fff ;
+    height: auto;
+}
+.services-text-content{
+    width: 80%;
+    
+}
+.services-text-content h2{
+    font-family: 'Anton', sans-serif;
+    color: #eb3643;
 
 }
 
@@ -262,6 +320,10 @@ html {
         font-size: 3rem;
 
     
+    }
+    .div-entrainement{
+        border-right: none;
+        
     }
 }
 
@@ -276,6 +338,171 @@ html {
     }
 }
 
+/* ------------------- Section Avantages ---------- */
+
+.avantages{
+    background-color: #eb3643;
+    height: auto;
+}
+
+.avantages-container{
+    width: 80%;
+}
+.list-avantages{
+    width: 80%;
+}
+
+.list-avantages li{
+    list-style-type: none;
+}
+
+.list-item-header i{
+    font-size: 50px;
+}
+
+.list-item-container{
+    width: 210px;
+    margin-bottom: 50px;
+}
+
+
+
+/* ------------------- Section formules et Tarifs ---------- */
+.txt-formules-italic{
+    font-style: italic;
+}
+
+.formules-card{
+    background-color: #222222;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    /* z-index: -99; */
+}
+
+.container-tarifs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cartes-tarifs{
+    width: 350px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    margin: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+.cartes-tarifs:hover{
+    position: relative;
+    transform: translateY(-5px);
+}
+
+.cartes-tarifs h4{
+    font-size: 30px;
+    padding: 25px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    background-color: #ffafbf;
+}
+.cartes-tarifs:nth-child(2) h4{
+    background-color: #ff5073;
+}
+.cartes-tarifs:nth-child(3) h4{
+    background-color: #ff0033;
+}
+.cartes-tarifs:nth-child(4) h4{
+    background-color: #ff1e00;
+}
+.cartes-tarifs:nth-child(5) h4{
+    background-color: #940000;
+}
+.cartes-tarifs:nth-child(6) h4{
+    background-color: #610000;
+}
+
+.cartes-tarifs span{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+.cartes-tarifs small{
+    font-size: 12px;
+}
+
+.durée{
+    color: #eb3643;
+}
+
+.cartes-tarifs p{
+    font-size: 18px;
+    padding: 8px 15px;
+    /* border-top: 1px solid rgb(194,194,194); */
+
+}
+.cartes-tarifs p:first-of-type{
+    border:none;
+}
+.cartes-tarifs p:last-of-type{
+    /* border-bottom: 1px solid rgb(194,194,194); */
+}
+.cartes-tarifs p:nth-child(odd){
+    /* background-color: rgba(195,195,195,0.219); */
+}
+
+.cartes-tarifs a{ 
+    display: block;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #333;
+    text-decoration: none;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 20px auto;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: #eb3643;
+    margin: 30px auto;
+}
+.cartes-tarifs a:hover{
+    background-color: #fc1b2a;
+    color: #f1f1f1; 
+
+}
+
+@media screen and (max-width : 775px ){
+
+    .cartes-tarifs{
+        width: 250px
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .section-tarifs h3{
+        font-size: 30px;
+        margin: 80px 0 45px;
+        text-align: center;
+        padding: 0 10px;}
+
+    .section-tarifs hr{
+        width: 150px;
+        margin: 20px auto 30px;
+    }
+}
 
 /* ------------------- Section Parallax ------------------ */
 
@@ -366,6 +593,11 @@ html {
     letter-spacing: 2px;
 
 }
+.temoin-sub{
+    color: white;
+    font-style: italic;
+    margin-top: -20px;
+}
 
 .temoin-date{
     display: block;
@@ -401,9 +633,25 @@ html {
 .contact{
     background-color: #222222;
     height: auto;
-    padding: 65px 35px;
+    /* padding: 35px 35px; */
+    min-width: 100% !important;
 
 }
+
+.contact-explaination{
+    width: 90%;
+    margin: 0 auto;
+}
+.etape-contact-content{
+    width: 250px;
+}
+.etape-contact-content h5{
+    /* font-family: serif; */
+    margin-bottom: 20px;
+    color: #eb3643;
+    text-transform: uppercase;
+}
+
 .contact-content h3{
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
@@ -424,15 +672,18 @@ html {
 .fab{
     font-size: 28px;
 }
-
+.zone-contact{
+    width: 80%;
+}
 .contact-form{
-    width: 60%;
+   width: 70%;
 }
 .contact-form h3{
     font-family: 'Anton', sans-serif;
     letter-spacing: 5px;
     display: block;
     margin-bottom: 5px;
+   
 
 }
 
@@ -442,6 +693,7 @@ html {
     margin-bottom: 8px;
     border-radius: 0px;
     color: white;
+   
 }
 .form-group textarea{
     background-color: transparent;
@@ -474,6 +726,10 @@ html {
     border-radius: 0px;
 }
 
+
+@media screen and (max-width: 775px ){
+
+}
 
 /* ------------------- Section Footer ------------------ */
 
