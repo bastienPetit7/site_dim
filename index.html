@@ -20,28 +20,24 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
             <li class="nav-item active">
               <a class="nav-link" href="#aPropos">Notre vision</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#entrainement">Entrainement</a>
+              <a class="nav-link" href="#entrainement">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#avantages">Avantages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formule&Tarifs">Formules & Tarifs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+           
         
         </div>
       </nav>
@@ -52,22 +48,30 @@
 
     <div class="ParallaxVideo row">
     
-        <video class="video-background "  loop muted autoplay>
-            <source src="/assets/video/Guitarist - 139.mp4">
+      
+
+        <video class="video-background d-none d-sm-block "  loop muted autoplay>
+            <source src="assets/video/Guitarist - 139.mp4">
         </video>
-        <div class="row">
-            <div class="col-12 offset-md-3 d-flex flex-column justify-content-center punch-line-1">
-                <span>Faut <br> que ca <br> bouge!</span><br>
-                <div class="d-flex flex-column">
-                    <span class="author">Dimitry Therese - coach musical</span>
-                </div>
-                <br>
-                <div>
-                    <a href="" class="btn btn-outline-danger mt-3 mr-4 text-white text-uppercase btn-lg">Les exercices</a>
-                    <a href="" class="btn btn-danger mt-3 text-uppercase btn-lg">Réserver</a>
-                </div>
+        <div class="img-background d-block d-sm-none">
+            <img src="assets/photo/soundtrap-BU816BGrP0U-unsplash_copie.png" alt="">
+        </div>
+      
+        
+        <div class="col-md-12 d-flex flex-column justify-content-center punch-line-1">
+            <span class="main-punch-line">Faut <br> que ca <br> bouge!</span><br>
+            <div class="txt-top-container d-flex flex-column">
+                <span class="author"> <span class="span-MY">MY </span>MUSICAL <span class="span-TRAINER">TRAINER</span></span>
+                <span class="text-white">l’entraînement et l’accompagnement par visio du musicien, du chanteur <br> et du porteur de projet musical.
+                </span>
+            </div>
+            <br>
+            <div>
+                <a href="#entrainement" class="btn btn-outline-danger mt-3 mr-4 text-white text-uppercase btn-lg">Les services</a>
+                <a href="#contact" class="btn btn-danger mt-3 text-uppercase btn-lg">Réserver</a>
             </div>
         </div>
+        
     
     </div>
 
@@ -89,19 +93,31 @@
 <section id="aPropos">
 
     <div class="row ">
-        <div class="col-md-6 d-md-block d-none p-0 img-deco-1">
+        <div class="col-md-4 d-md-block d-none p-0 img-deco-1">
             <img src="assets/photo/luis-gherasim-aLPY2rRTYQI-unsplash.jpg" alt="photo de studio d'enregistrement">
         </div>
-        <div class="col-md-6 d-flex justify-content-center align-items-center a-propos">
-            <div class="conteneur-text-a-propos">
-                <span class="propos-title ">à propos</span> <br>
-                <span class="propos-name ">Dimitry Therese</span>
-                <div class="d-md-none d-block p-0 img-deco-1">
+        <div class="col-md-8 d-flex justify-content-center align-items-center a-propos">
+            <div class="conteneur-text-a-propos mt-md-5 text-justify">
+                <span class="propos-title ">Notre Vision</span> <br>
+                <!-- <span class="propos-name ">Dimitry Therese</span> -->
+                <div class="d-md-none d-block p-0 img-deco-1 mb-5">
                     <img src="assets/photo/luis-gherasim-aLPY2rRTYQI-unsplash.jpg" alt="photo de studio d'enregistrement">
                 </div>
-                <p class="mt-5 pt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a suscipit voluptatum ullam repudiandae illum, quis nesciunt dignissimos necessitatibus officiis ex atque, inventore, iusto quisquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a suscipit voluptatum ullam repudiandae illum, quis nesciunt dignissimos necessitatibus officiis ex atque, inventore, iusto quisquam.</p>
+                <strong class="h5 punch-line-vision" >" Nous mettons un point d’honneur à maintenir ta motivation et à t’aider à atteindre tes objectifs. "
+                </strong>
+                <p class="mt-2 pt-3 mb-4"> <span class="span-MY">MY</span> MUSICAL <span class="span-TRAINER">TRAINER</span> a été crée par <strong>Dimitry Thérèse</strong> , réalisateur et chanteur évoluant à Paris et à Cannes. </p>
+                <p>Il est Manager, pendant des années, dans une importante agence évènementielle en Angleterre. il décide ensuite d'intégrer la scène musicale et d’ouvrir un studio d’enregistrement. Passionné de live, il partage son temps entre des séances d’entraînement musical et son activité d’accompagnateur de projets artistiques.
+                </p><br>
+                <strong class="mt-4">Formation professionnelle continue</strong>
+                <ul class="mt-2">
+                    <li class="ml-5">École de Jazz Le CIM à Paris.</li>
+                    <li class="ml-5">École Tech Music School , Londres</li>
+                    <li class="ml-5">École de chant The City Lit, Londres</li>
+                </ul><br>
                 
+                <p>Que tu souhaites être/vivre du métier de musicien, chanteur, DJ, porteur d'un projet musical ou qu’il s’agisse d’un hobby, la pratique musicale demande de tenir la distance.</p>
+                <p>Une stratégie de travail et un programme adaptés à ta personnalité constituent quelques-unes des clés pour garder la motivation sur le long terme afin d’atteindre tes objectifs.</p>
+                <p>Chez <strong>MY MUSICAL TRAINER</strong> , que nous te proposons des solutions concrètes via une approche qui fait ses preuves depuis plus de 10 ans.</p><br><br>
             </div>
     
         </div>
@@ -113,17 +129,45 @@
 <section id="entrainement">
 
   
-        <div class="training row ">
+        <div class="training row pt-3 ">
             <!-- <img src="assets/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg" alt=""> -->
             <div class="img-overlay"></div>
-            <div class="training-container">
+            <div class="training-container mt-5">
     
-                <h2 class="text-center text-white training-title">Votre <br> Entraînement</h2>
-                <p class="text-white p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae aspernatur distinctio vitae vel fugit aut nulla reprehenderit cumque. Ullam, sapiente perferendis. Quos corrupti aspernatur consequatur expedita nihil dolorum rerum. Aperiam, blanditiis delectus. Quae, consectetur.</p>
+                <h2 class="text-center text-white training-title">Services</h2>
+                <h4 class="text-center text-white mt-4">Ton accompagnement <span class="span-MY">MY</span>  MUSICAL <span class="span-TRAINER">TRAINER</span> </h4>
+                <p class="text-white p-4 text-center">Nous t’apportons un entraînement motivant et un accompagnement sur-mesure.</p>
 
-                <div class="row training-steps d-flex p-4 mb-5">
+                <div class="row p-4 services-content mt-5">
+
+                    <div class="col-md-6 text-white div-entrainement d-flex justify-content-center align-items-start">
+                        <div class="services-text-content ml-md-5 mb-5">
+                            <h2>L’Entraînement</h2>
+                            <p class="mt-4">Les séances d’Entraînement se déroulent par visio.</p>
+                            <p>Le programme d’entraînement est mis en place sur la base des réponses fournies par: </p>
+                            <ul>
+                                <li class="ml-3"> notre « Questionnaire de prise de contact »</li>
+                                <li class="ml-3"> notre conversation lors de la première séance « Écoute & Échange ».</li> 
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-white d-flex justify-content-center align-items-start">
+                        <div class="services-text-content ml-md-5">
+                            <h2>L’Accompagnement</h2><br>
+                            <p>Les séances d’Accompagnement se déroulent par visio. </p>
+                            <p>Le but des séances est de t’amener sur la durée à plus de performance et à une meilleure maîtrise de ton potentiel.</p>
+                            <p>L’accompagnement se déroule dans une atmosphère conviviale dénuée de jugement.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section training Numeros -->
+                <!-- <div class="row training-steps d-none d-md-flex p-4 mb-5">
                     
-                    <div class="col-md-4 col-6 training-step d-flex justify-content-center align-items-center mb-3 ">
+                    <div class="col-md-4 col-6 training-step  d-flex justify-content-center align-items-center mb-3 ">
                         <div class="numero-training">
                             <span class="">1</span>
                         </div>
@@ -166,14 +210,275 @@
                     </div>
                     
                     
-                </div>
+                </div> -->
+
                 
-                <a href="" class="btn btn-danger px-4 my-5 text-center">Réserver</a>
+                <div class="btn-services d-flex justify-content-center mb-5">
+                    <a href="" class="btn btn-danger btn-lg px-4 my-5 text-center">Voir nos formules</a>
+
+                </div>
             </div>
         </div>
     </div>
 
 </section>
+
+<!-- Section Avantages -->
+
+<section id="avantages">
+    <div class="row avantages justify-content-center pt-5">
+
+        <div class="avantages-container">
+
+            <div class="avantages-title mt-5 d-flex flex-column align-items-center d-sm-block">
+                <h2 class="training-title">les avantages</h2>
+                <h2>My Musical Trainer </h2>
+
+
+            </div>
+            <div class="avantages-list-container d-flex justify-content-center mt-5">
+
+                <div class="d-flex list-avantages flex-wrap py-5 justify-content-sm-between justify-content-center">
+                    
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">Programme personnalisé</p> 
+                               <p class="text-center">Challenges pendant et entre chaque séance</p> 
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="w-100 list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">Entraînement et accompagnement</p> 
+                               <p class="text-center">Professionnel qualifié</p> 
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">Séance enregistrable à la demande</p> 
+                               <!-- <p>Challenges pendant et entre chaque séance</p>  -->
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">Validation rédivière des résultats obtenus via bilan</p> 
+                               <!-- <p>Challenges pendant et entre chaque séance</p>  -->
+                            </div>
+                        </div>
+                   
+                    
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="fas fa-phone-volume"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">1 Interlocuteur dédié</p> 
+                               <p class="text-center">24h à 48h de réactivité garantie</p> 
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">Possibilitité d'intégrer l’agence de booking</p> 
+                               <p class="text-center">My Musical Event</p> 
+                            </div>
+                        </div>
+                   
+                
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="far fa-credit-card"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">Formule avec ou sans engagement</p> 
+                               <p class="text-center">Règlement au choix : annuel, mensuel ou à la séance </p> 
+                            </div>
+                        </div>
+           
+                   
+                        <div class="list-item-container">
+                            <div class="list-item-header d-flex justify-content-center align-items-center">
+                                <i class="far fa-smile"></i>
+                            </div>
+                            <div class="list-item-content d-flex flex-column align-items-center justify-content-center mt-4">
+                               <p class="text-center">atmosphère conviviale dénuée de jugement</p> 
+                               <!-- <p>Challenges pendant et entre chaque séance</p>  -->
+                            </div>
+                        </div>
+                 
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Section Formules et Prix -->
+
+<section id="formule&Tarifs">
+    <div class="row formules-card">
+   
+
+
+            <h2 class="training-title mb-5 ">Formules et Tarifs</h2>
+            
+            <div class="formules-subtitle w-100 d-flex flex-column align-items-center mb-5">
+                <strong class="h2">Choisis la formule adaptée à tes besoins </strong><br>
+                <ul>
+                    <li class="">1 séance par semaine</li>
+                    <li class="">1 séance tous les 15 jours</li>
+                    <li class="">1 séance par mois</li>
+                </ul>
+                <p class="txt-formules-italic">Pour mesurer des progrès rapides, 1 séance par semaine est recommandée.</p>
+
+
+            </div>
+
+        <div class="container-tarifs">
+
+            <div class="cartes-tarifs">
+                <h4>Entraînement</h4>
+                <span><small>à partir de</small> 49€ <small class="h2">/séance</small> </span>
+                <p class="text-center durée">Durée : 1h15 à 1h30</p>
+                <p>✅ Préparation</p>
+                <p>✅ Respect du tempo</p>
+                <p>✅ Technique</p>
+                <p>✅ Conscience du style / Le vocabulaire approprié</p>
+                <p>✅ Conscience de la forme</p>
+                <p>✅ Expression scénique</p>
+                <p>✅ Conscience des dynamiques</p>
+                
+
+                <a href="#contact" role="button">Réservez un guide</a>
+            </div>
+            
+            <div class="cartes-tarifs ml-md-5">
+                <h4>Répétition en solo ou en équipe</h4>
+                <span><small>à partir de</small> 49€ <small class="h2">/séance</small> </span>
+                <p class="text-center durée">Durée : 1h15 à 1h30</p>
+                <p>✅ La finalité de la répétition</p>
+                <p>✅ L’avant-répétition</p>
+                <p>✅ L’organisation de la répétition</p>
+                <p>✅ La méthode de travail</p>
+                <p>✅ L’enregistrement de la répétition</p>
+                <p>✅ L’éthique</p>
+                <p>✅ Le débriefing</p>
+                <p>✅ Le travail à faire à la maison</p>
+    
+                <a href="#contact" role="button">Réservez un guide</a>
+    
+            </div>
+
+            <div class="cartes-tarifs ml-md-5">
+                <h4>Se professionnaliser</h4>
+                <span><small>à partir de</small> 129€ <small class="h2">/séance</small> </span>
+                <p class="text-center durée">Durée : 1h15 à 1h30</p>
+                <p>✅ Répertoire et genre musicaux</p>
+                <p>✅ Le matériel et la logistique</p>
+                <p>✅ S’organiser</p>
+                <p>✅ Rester focus</p>
+                <p>✅ Savoir se vendre</p>
+                <p>✅ Préparer son enregistrement</p>
+                <p>✅ Préparer son live</p>
+                <p>✅ Le leadership de groupe</p>
+                <p>✅ Les aspects juridiques</p>
+    
+                <a href="#contact" role="button">Réservez un guide</a>
+    
+            </div>
+
+            <div class="cartes-tarifs ml-md-5">
+                <h4>Vivre de l’évènementiel musical</h4>
+                <span><small>à partir de</small> 129€ <small class="h2">/séance</small> </span>
+                <p class="text-center durée">Durée : 1h15 à 1h30</p>
+                <p>✅ Le Projet</p>
+                <p>✅ Style et identité</p>
+                <p>✅ La structure</p>
+                <p>✅ Les tarifs pratiqués</p>
+                <p>✅ L’approche client particulier</p>
+                <p>✅ L’approche client entreprise</p>
+                <p>✅ Les preuves</p>
+                <p>✅ La prise de notes en amont de l’évènement</p>
+                <p>✅ Le jour J</p>
+                <p>✅ Les aspects juridiques</p>
+    
+                <a href="#contact" role="button">Réservez un guide</a>
+    
+            </div>
+
+            <div class="cartes-tarifs ml-md-5">
+                <h4>Accompagnement personnel <br> du porteur de projet</h4>
+                <span><small>à partir de</small> 49€ <small class="h2">/séance</small> </span>
+                <p class="text-center durée">Durée : 1h15 à 1h30</p>
+                <p>✅ Responsabilisation</p>
+                <p>✅ Stimulation positive</p>
+                <p>✅ Objectif(s)</p>
+                <p>✅ Exigence</p>
+                <p>✅ Challenges</p>
+                <p>✅ Assistance technique et affective</p>
+                <p>✅ Apprentissage constant</p>
+                <p>✅ Environnement positif</p>
+                <p>✅ Les aspects juridiques</p>
+    
+                <a href="#contact" role="button">Réservez un guide</a>
+    
+            </div>
+
+            <div class="cartes-tarifs ml-md-5">
+                <h4>La réalisation musicale « MAO »</h4>
+                <span><small>à partir de</small> 49€ <small class="h2">/séance</small> </span>
+                <p class="text-center durée">Durée : 1h15 à 1h30</p>
+                <p>✅ Création d’une chanson à la guitare, au piano, à la voix</p>
+                <p>✅ Création d’une maquette ou d'un album</p>
+                <p>✅ Faire de la musique sur-mesure</p>
+                <p>✅ Faire du « Sounds like »</p>
+                <p>✅ Jeux et défis à relever</p>
+                <p>✅ Préparer son enregistrement</p>
+                <p>✅ Les aspects juridiques</p>
+    
+                <a href="#contact" role="button">Réservez un guide</a>
+    
+            </div>
+
+
+            
+
+        </div>
+
+
+
+
+    </div>
+
+
+</section>
+
 <!-- Section parallax -->
 
 <section >
@@ -182,22 +487,42 @@
         <h3>Des temoignages</h3>
         <div class="temoignage-cont">
             <div class="temoignages-container ">
-                <p class="temoignage ">« Je m'entraîne depuis 6 mois, j'ai déjà perdu 17 kg »</p>
-                <span class="temoin-name ">Jacques</span> <br>
+                <p class="temoignage ">« Parfaite pédagogie adaptée à qui je suis, grande patience et à l’écoute. Je vois les progrès accomplis au chant et à la guitare à l’issue de chaque séance. Je ne suis pas prêt d’arrêter. »</p>
+                <span class="temoin-name ">Dark Angel Knight,</span> <br>
+                <span class="temoin-sub"> Chanteur, guitariste et leader de groupe de rock basé à Paris</span> <br>
                 <span class="temoin-date ">10 Janvier 2021</span>
             
 
             </div>
             <div class="temoignages-container p-4 my-4 d-flex flex-column align-items-center">
-                <p class="temoignage ">« Grâce à Michael, j'ai corrigé ma posture rapidement »</p>
-                <span class="temoin-name ">CLAIRE</span> <br>
+                <p class="temoignage ">« Un très bon coach, qui a une approche pédagogique psychologique et ludique.
+                    Sans compter que l’ambiance de travail est tout à la fois studieuse et décontractée. Je recommande vivement MyMusicalTrainer. »</p>
+                <span class="temoin-name ">Ismail C</span> <br>
+                <span class="temoin-sub"> Chanteur et MC basé à Auxerre</span> <br>
                 <span class="temoin-date ">10 Janvier 2021</span>
             
 
             </div>
             <div class="temoignages-container p-4 my-4 d-flex flex-column align-items-center">
-                <p class="temoignage ">« J'ai réussi à terminer mon premier marathon »</p>
-                <span class="temoin-name ">Iris</span> <br>
+                <p class="temoignage ">« Très grande écoute de l’autre, rassurant sur toutes les étapes du projet et du tact pour sensibiliser sur les points sensibles à travailler, bref un professionnel. »</p>
+                <span class="temoin-name ">Lynn M </span> <br>
+                <span class="temoin-sub"> Artiste-chanteuse et entrepreneuse basée à Toulouse</span> <br>
+                <span class="temoin-date ">10 Janvier 2021</span>
+            
+
+            </div>
+            <div class="temoignages-container p-4 my-4 d-flex flex-column align-items-center">
+                <p class="temoignage ">« Je viens de loin, et pourtant les progrès que j’ai fait sont au delà de mes espérances. Grâce à MyMusicalTrainer j’ai gagné en confiance et en méthode, bien plus je suis maintenant en mesure de me rémunérer grâce à mon art. Milles fois merci »</p>
+                <span class="temoin-name ">DJ Noces </span> <br>
+                <span class="temoin-sub"> DJ professionnel basé en ile-de-France</span> <br>
+                <span class="temoin-date ">10 Janvier 2021</span>
+            
+
+            </div>
+            <div class="temoignages-container p-4 my-4 d-flex flex-column align-items-center">
+                <p class="temoignage ">« Si vous perdez la motivation dans votre projet musical, il vous faut MyMusicalTrainer et vous verrez que vous la retrouverez la motivation et les résultats. »</p>
+                <span class="temoin-name ">Philippe H. </span> <br>
+                <span class="temoin-sub"> Professeur de musique et entrepreneur basé à Pau</span> <br>
                 <span class="temoin-date ">10 Janvier 2021</span>
             
 
@@ -206,80 +531,130 @@
     </div>
 </section>
 
-<section id="contact" class="row contact ">
-    <div class="col-md-6 p-4 d-flex justify-content-center">
-        <!-- Coordonnés de l'entreprise -->
-        <div class="contact-content text-white">
+<section id="contact" >
+    
+    <div class="row contact justify-content-center py-5">
 
-            <h3 class="text-uppercase ">Dimitry Therese</h3>
-            <h5 class="text-uppercase ">Coach musical</h5><br>
-            <p>15 rue du chateau <br> 75001, Paris</p>
-            <p>Tél: 01 23 45 67 89</p>
-            <p>Email : contact@monsite.com</p>
-            <div class="rs-contact">
-                <ul class="rs-list d-flex">
-                    <li>
-                        <a href="">
+        <div class="d-flex w-100 flex-column align-items-center mt-5">
+
+            <h2 class="training-title mb-5 mt-4 text-center text-white ">Nous contacter</h2>
+        
+            <div class="contact-explaination d-flex justify-content-center mb-5">
+                <ul class="text-white w-md-100 d-md-flex justify-content-between">
+                    <li class="d-flex mr-md-5">
+                        <div class="etape-contact-content">
+                            <h5>1. La préparation</h5>
+                            <p>Le « Questionnaire de prise de contact » est à remplir et à nous renvoyer par e-mail.</p>
                             
-                            <i class="fab fa-facebook-f text-white"></i>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-instagram text-white"></i>
-                        </a>
+                    <li class="d-flex mr-md-5 ml-md-5 ">
+                        <div class="etape-contact-content">
+                            <h5>2. Écoute & Échange <br> par visio</h5>
+                            <p>Pour discuter de ta demande, nous convenons avec toi d’un rendez-vous par visio</p>
+                            <p>La séance Écoute & Échange permet de cadrer le contexte de ta demande, de formuler une proposition adaptée à tes besoins et de bâtir un programme de travail sur-mesure</p>
+                            
+                        </div>
                     </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-twitter text-white"></i>
-                        </a>
+                    <li class="d-flex ml-md-5">
+                        <div class="etape-contact-content">
+                            <h5>3. L’Action</h5>
+                            <p>Mise en place et validation du planning</p>
+                            <p>La première séance commence à réception du règlement.</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-youtube text-white"></i>
-                        </a>
-                    </li>
+                
                 </ul>
             </div>
+
+        
+        </div>
+        <div class="row zone-contact ">
+
+            <div class="col-md-6 p-md-4 p-0 d-flex justify-content-center">
+                <!-- Coordonnés de l'entreprise -->
+                <div class="contact-content text-white">
+
+                    <h3 class="text-uppercase ">Dimitry Therese</h3>
+                    <h5 class="text-uppercase ">Responsable du développement</h5><br>
+                    <p>92 route de Grasse <br> 06220, Vallauris</p>
+                    <p>Tél: +33 (0) 6 59 33 10 76</p>
+                    <p>Email : contact@mymusicaltrainer.com</p>
+                    <div class="rs-contact">
+                        <ul class="rs-list d-flex">
+                            <li>
+                                <a href="">
+                                    
+                                    <i class="fab fa-facebook-f text-white"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram text-white"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter text-white"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-youtube text-white"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 p-md-4 p-0 ">
+                <!-- Formulaire de contact -->
+                <div class="contact-form mx-auto ">
+                    <form action="" >
+                        <h3 class="form-title text-white text-uppercase">Contact</h3>
+                        <div class="form-group mt-3">
+                            
+                            <input class="form-control" type="text" id="clientName" placeholder="Nom">
+                            <input class="form-control" type="email" id="clientLastName" placeholder="Email">
+                            <textarea class="form-control" cols="50" name="" id="clientMessage" placeholder="Message" ></textarea>
+                            
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-danger button-sub-contact-form px-5" >Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
 
     </div>
-
-    <div class="col-md-6 p-4 ">
-        <!-- Formulaire de contact -->
-        <div class="contact-form">
-            <form action="" >
-                <h3 class="form-title text-white text-uppercase">Contact</h3>
-                <div class="form-group mt-3">
-                    
-                    <input class="form-control" type="text" id="clientName" placeholder="Nom">
-                    <input class="form-control" type="email" id="clientLastName" placeholder="Email">
-                    <textarea class="form-control" cols="50" name="" id="clientMessage" placeholder="Message" ></textarea>
-                    
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-danger button-sub-contact-form px-5" >Envoyer</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
 </section>
 
-<footer class="row ">
-    <div class="footer-content w-100">
+<footer class="row footer-content">
+
+    <div class="scroll-up w-50 d-flex justify-content-end mt-5">
+        <div class="d-flex flex-column align-items-center">
+            <a href="#top" class="text-white d-block"><i class="fas fa-chevron-up" style="font-size: 50px;"></i></a><br>
+            <small class="text-white">retourner en haut du site</small>
+
+        </div>
+    </div>
+
+    <div class=" w-100 d-flex justify-content-center align-items-end">
         
 
         <div class="bottom-footer">
             <ul class="d-flex link-bottom-footer">
-                <li>
+                <li class="mr-5">
                     <a class="text-white " href="">Mentions légales</a>
                 </li>
-                <li>
+                <li class="mr-5">
                     <a class="text-white " href="">Politique de confidentialité</a>
                 </li>
-                <li>
+                <li class="mr-5">
                     <a class="text-white " href="">Conditions d'utilisation</a>
                 </li>
                 
