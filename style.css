@@ -26,27 +26,23 @@ html {
 }
 
 
-/* ------------------- Section Parallax Video ------------------ */
+/* ------------------- Section Accueil ------------------ */
 
 .bandeau-accueil {
     min-width: 100% !important;
-    height: auto;
-    background: url(assets/photo/oleg-ivanov-5j5zOvecrkU-unsplash.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover ;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
+    height: 900px; 
     position: relative;
-    z-index: -998;
     
 }
 
-/* ------------------- Section Temoignage ------------------ */
-
+.bandeau-accueil-background{
+    background: url(assets/photo/oleg-ivanov-5j5zOvecrkU-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+}
 
 .bandeau-acceuil-overlay{
     position: absolute;
@@ -55,23 +51,18 @@ html {
     right: 0;
     left: 0;
     background-color:rgba(0, 0, 0, 0.4) ;
-    z-index: -997;
+    z-index: 1;
 }
 
-.img-background{
-    min-width: 100%;
+
+.punch-line-1{
+
     position: absolute;
-    top:0;
-    right: 0;
-    bottom: 0;
-    z-index: -999;
-    min-height: 100%;
-}
-
-.bandeau-accueil .punch-line-1{
+    top: 0;
     width: 100%;
     height: auto;
     padding: 190px 0;
+    z-index: 2;
     /* margin-left: 100px; */
    
 }
@@ -102,6 +93,9 @@ html {
         width: 100%;
 
     }
+    .bandeau-accueil{
+        height: 800px;
+    }
 
     .bandeau-accueil .main-punch-line{
         font-size: 80px;
@@ -115,9 +109,13 @@ html {
     }
 }
 @media screen and (max-width: 576px) {
+
+    .bandeau-accueil{
+        height: 600px;
+    }
  
     .bandeau-accueil .punch-line-1{
-        padding: 110px 0 50px 0;
+        padding: 130px 0 50px 0;
     }
     
     .bandeau-accueil .main-punch-line {
@@ -241,12 +239,20 @@ html {
 
 .training{
     position: relative;
-    height: auto;
+    height: 850px; 
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    
+}
+.training-background{
+
     background: url(assets/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 100% !important;
-    z-index: -99;
+    width: 100%;
+    height: 100%;
+
 }
 
 
@@ -255,19 +261,22 @@ html {
     left: 0;
     top: 0;
     right: 0;
-    bottom: 0;
-    
+    bottom: 0;    
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
-    z-index: -98;
+    z-index: 2;
   
 }
 
 .training-container{
+    position: absolute;
+    top: 0;
     width: 80%;
     margin: 0 auto;
     padding-top: 40px;
+    z-index: 3;
 }  
+
 .training-title{
     font-family: 'Anton', sans-serif;
     letter-spacing: 10px;
@@ -324,8 +333,35 @@ html {
 
 }
 
-@media screen and (max-width: 775px ){
+.button-services{
+    
+    display: block;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #333;
+    text-decoration: none;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 20px auto;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: #eb3643;
+    margin: 30px auto;
+}
 
+@media screen and (max-width: 922px ){
+    .training{
+        height: 880px;
+    }
+}
+
+@media screen and (max-width: 770px ){
+
+    .training{
+        height: 940px;
+    }
     .training-title{
        
         letter-spacing: 8px;
@@ -338,6 +374,18 @@ html {
         
     }
 }
+@media screen and (max-width: 767px ){
+
+    .training{
+        height: 1040px;
+    }
+}
+
+@media screen and (max-width: 622px ){
+    .training{
+        height: 1100px;
+    }
+}
 
 @media screen and (max-width: 576px ){
 
@@ -347,6 +395,16 @@ html {
         font-size: 2rem;
 
     
+    }
+}
+@media screen and (max-width:498px ){
+    .training{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:391px ){
+    .training{
+        height: 1280px;
     }
 }
 
