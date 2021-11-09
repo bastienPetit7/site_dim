@@ -29,7 +29,7 @@ html {
 /* ------------------- Section Accueil ------------------ */
 
 .bandeau-accueil {
-    min-width: 100% !important;
+    width: 100%;
     height: 900px; 
     position: relative;
     
@@ -40,11 +40,10 @@ html {
     background-position: center ;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+
+    width: 100% ; 
     height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+
 }
 
 .bandeau-acceuil-overlay{
@@ -248,7 +247,7 @@ html {
 .training{
     position: relative;
     height: 850px; 
-    min-width: 100% !important;
+    width: 100% ;
     display: flex;
     justify-content: center;
     
@@ -585,7 +584,7 @@ html {
 /* ------------------- Section Parallax ------------------ */
 
 .parallax {
-    min-width: 100% !important;
+    width: 100% ;
     height: auto;
     background: url(assets/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg);
     background-position: center;
@@ -712,7 +711,7 @@ html {
     background-color: #222222;
     height: auto;
     /* padding: 35px 35px; */
-    min-width: 100% !important;
+    width: 100% ;
 
 }
 
